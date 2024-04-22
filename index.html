@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAQQ.LY</title>
+    <link rel="stylesheet" href="resources/css/styles.css" />
+    <script src="resources/js/manage_dogs.js"></script>
+    <script src="resources/js/manage_walkers.js"></script>
+    <script src="resources/js/loading.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">WAQQ.LY</h1>
+      <p>Tailored Walks for Every Tail</p>
+    </header>
+    <div class="container">
+      <div class="section">
+        <h2>Register Dog</h2>
+        <form id="formRegisterDog">
+          <div class="form-group">
+            <label for="dogName">Dog Name:</label>
+            <input type="text" id="dogName" name="dogName" />
+          </div>
+          <div class="form-group">
+            <label for="dogBreed">Dog Breed:</label>
+            <input type="text" id="dogBreed" name="dogBreed" />
+          </div>
+          <div class="form-group">
+            <label for="dogAge">Dog Age:</label>
+            <input type="text" id="dogAge" name="dogAge" />
+          </div>
+          <div class="form-group">
+            <label for="dogOwnerEmail">Dog Owner Email:</label>
+            <input type="email" id="dogOwnerEmail" name="dogOwnerEmail" />
+          </div>
+          <button class="button" type="submit">Register Dog</button>
+        </form>
+      </div>
+      <div class="section">
+        <h2>Register Walker</h2>
+        <form id="formRegisterWalker">
+          <div class="form-group">
+            <label for="walkerName">Walker Name:</label>
+            <input type="text" id="walkerName" name="walkerName" />
+          </div>
+          <div class="form-group">
+            <label for="walkerExperience">Walker Experience:</label>
+            <input type="text" id="walkerExperience" name="walkerExperience" />
+          </div>
+          <div class="form-group">
+            <label for="walkerArea">Walker Area:</label>
+            <input type="text" id="walkerArea" name="walkerArea" />
+          </div>
+          <div class="form-group">
+            <label for="walkerArea">Walker Email:</label>
+            <input type="email" id="walkerEmail" name="walkerEmail" />
+          </div>
+          <button class="button" type="submit">Register Walker</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Display Dogs</h2>
+        <button class="button" type="button" id="buttonDisplayDogs">
+          Display Dogs
+        </button>
+        <br />
+        <table>
+          <thead>
+            <tr>
+              <th>Dog Name</th>
+              <th>Dog Breed</th>
+              <th>Dog Age</th>
+              <th>Dog Owner Email</th>
+            </tr>
+          </thead>
+          <tbody id="tableBodyDogInfo"></tbody>
+        </table>
+      </div>
+      <div class="section">
+        <h2>Display Walkers</h2>
+        <button class="button" type="button" id="buttonDisplayWalkers">
+          Display Walkers
+        </button>
+        <br />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Walker Name</th>
+              <th>Walker Experience</th>
+              <th>Walker Area</th>
+              <th>Walker Email</th>
+            </tr>
+          </thead>
+          <tbody id="tableBodyWalkerInfo"></tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <p>WEBSITE FOR PROTOTYPE PURPOSES ONLY</p>
+    </footer>
+  </body>
+</html>
